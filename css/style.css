@@ -32,13 +32,18 @@ header {
   grid-gap: 15px;
   color: white;
   text-align: center;
+  margin-bottom: 10px;
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 0;
 }
 
 .flowChart {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  /* grid-template-rows: 1fr 1fr 1fr 1fr 1fr; */
   grid-gap: 15px;
+  grid-auto-columns: auto;
 }
 
 .flowChart img {
@@ -53,7 +58,7 @@ header {
   background-color: rgb(74, 156, 74);
 }
 
-#model {
+#controller {
   background-color: rgb(240, 143, 159);
 }
 
@@ -61,10 +66,34 @@ header {
   background-color: rgb(168, 101, 168);
 }
 
-#controller {
+#model {
  background-color: rgb(32, 124, 186);
 }
 
+.serverSec {
+  border: 7px solid rgb(71, 66, 71) ;
+  padding: 10px;
+}
+
+.routesSec {
+  border: 7px solid rgb(74, 156, 74) ;
+  padding: 10px;
+}
+
+.controllerSec {
+  border: 7px solid rgb(240, 143, 159) ;
+  padding: 10px;
+}
+
+.viewSec {
+  border: 7px solid rgb(168, 101, 168) ;
+  padding: 10px;
+}
+
+.modelSec {
+ border: 7px solid rgb(32, 124, 186) ;
+ padding: 10px;
+}
 
 /***************************************
 MEDIA QUERIES
