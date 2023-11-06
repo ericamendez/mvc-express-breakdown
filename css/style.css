@@ -17,20 +17,32 @@ LAYOUT
 
 body {
   font-family: 'Open Sans Condensed', sans-serif;
+  
 }
 
+header {
+  text-align: center;
+}
 /***************************************
 
 *****************************************/
-main {
+.title {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-}
-main > section {
-  height: 500px;
-}
-header {
+  grid-gap: 15px;
+  color: white;
   text-align: center;
+}
+
+.flowChart {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  grid-gap: 15px;
+}
+
+.flowChart img {
+  width: 100%;
 }
 
 #server {
