@@ -108,6 +108,9 @@ header {
   align-items: center;
 }
 
+.desc {
+  font-size: smaller;
+}
 /***************************************
 MEDIA QUERIES
 *****************************************/
